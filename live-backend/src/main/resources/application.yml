@@ -1,0 +1,24 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: live-debate-backend
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+# Logging
+logging:
+  level:
+    com.live: INFO
+    org.springframework.web.socket: INFO
+
+# SpringDoc OpenAPI
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
